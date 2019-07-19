@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>Elite CRM Admin Template - CRM admin dashboard web app kit</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">
+    <link href="../plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <!-- Menu CSS -->
+    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="css/colors/gray-dark.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="cssload-speeding-wheel"></div>
+    </div>
+    <div id="wrapper">
+        <!-- Top Navigation -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="ti-menu"></i></a>
+                <div class="top-left-part"><a class="logo" href="index.html"><b><img src="../plugins/images/eliteadmin-logo.png" alt="home" class="dark-logo" /><img src="../plugins/images/eliteadmin-logo-dark.png" alt="home" class="light-logo" /></b><span class="hidden-xs"><img src="../plugins/images/eliteadmin-text.png" alt="home" class="dark-logo" /><img src="../plugins/images/eliteadmin-text-dark.png" alt="home" class="light-logo" /></span></a></div>
+                <ul class="nav navbar-top-links navbar-left hidden-xs">
+                    <li><a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light"><i class="icon-arrow-left-circle ti-menu"></i></a></li>
+                    <li>
+                        <form role="search" class="app-search hidden-xs">
+                            <input type="text" placeholder="Search..." class="form-control">
+                            <a href=""><i class="fa fa-search"></i></a>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li class="dropdown"> <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><i class="icon-envelope"></i>
+          <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+          </a>
+                        <ul class="dropdown-menu mailbox animated bounceInDown">
+                            <li>
+                                <div class="drop-title">You have 4 new messages</div>
+                            </li>
+                            <li>
+                                <div class="message-center">
+                                    <a href="#">
+                                        <div class="user-img"> <img src="../plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                        <div class="mail-contnet">
+                                            <h5>Pavan kumar</h5>
+                                            <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="user-img"> <img src="../plugins/images/users/sonu.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                                        <div class="mail-contnet">
+                                            <h5>Sonu Nigam</h5>
+                                            <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="user-img"> <img src="../plugins/images/users/arijit.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                                        <div class="mail-contnet">
+                                            <h5>Arijit Sinh</h5>
+                                            <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span> </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="user-img"> <img src="../plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                                        <div class="mail-contnet">
+                                            <h5>Pavan kumar</h5>
+                                            <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="text-center" href="javascript:void(0);"> <strong>See all notifications</strong> <i class="fa fa-angle-right"></i> </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-messages -->
+                    </li>
+                    <!-- /.dropdown -->
+                    <li class="dropdown"> <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><i class="icon-note"></i>
+          <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+          </a>
+                        <ul class="dropdown-menu dropdown-tasks animated slideInUp">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <p> <strong>Task 1</strong> <span class="pull-right text-muted">40% Complete</span> </p>
+                                        <div class="progress progress-striped active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="sr-only">40% Complete (success)</span> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <p> <strong>Task 2</strong> <span class="pull-right text-muted">20% Complete</span> </p>
+                                        <div class="progress progress-striped active">
+                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"> <span class="sr-only">20% Complete</span> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <p> <strong>Task 3</strong> <span class="pull-right text-muted">60% Complete</span> </p>
+                                        <div class="progress progress-striped active">
+                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">60% Complete (warning)</span> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <p> <strong>Task 4</strong> <span class="pull-right text-muted">80% Complete</span> </p>
+                                        <div class="progress progress-striped active">
+                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">80% Complete (danger)</span> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a class="text-center" href="#"> <strong>See All Tasks</strong> <i class="fa fa-angle-right"></i> </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-tasks -->
+                    </li>
+                    <!-- /.dropdown -->
+                    <!-- .Megamenu -->
+                    <li class="mega-dropdown">
+                        <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><span class="hidden-xs">Mega</span> <i class="icon-options-vertical"></i></a>
+                        <ul class="dropdown-menu mega-dropdown-menu animated bounceInDown">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Header Title</li>
+                                    <li><a href="javascript:void(0)">Link of page</a> </li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Header Title</li>
+                                    <li><a href="javascript:void(0)">Link of page</a> </li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Header Title</li>
+                                    <li><a href="javascript:void(0)">Link of page</a> </li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Header Title</li>
+                                    <li> <a href="javascript:void(0)">Link of page</a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- /.Megamenu -->
+                    <li class="right-side-toggle"> <a class="waves-effect waves-light" href="javascript:void(0)"><i class="ti-settings"></i></a></li>
+                    <!-- /.dropdown -->
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- End Top Navigation -->
+        <!-- Left navbar-header -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse slimscrollsidebar">
+                <div class="user-profile">
+                    <div class="dropdown user-pro-body">
+                        <div><img src="../plugins/images/users/varun.jpg" alt="user-img" class="img-circle"></div>
+                        <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Steave Gection <span class="caret"></span></a>
+                        <ul class="dropdown-menu animated flipInY">
+                            <li><a href="#"><i class="ti-user"></i> My Profile</a></li>
+                            <li><a href="#"><i class="ti-wallet"></i> My Balance</a></li>
+                            <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="nav" id="side-menu">
+                    <li class="sidebar-search hidden-sm hidden-md hidden-lg">
+                        <!-- input-group -->
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+            <button class="btn btn-default" type="button"> <i class="fa fa-search"></i> </button>
+            </span> </div>
+                        <!-- /input-group -->
+                    </li>
+                    <li class="nav-small-cap m-t-10">--- Main Menu</li>
+                    <li> <a href="index.html" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i> <span class="hide-menu"> Dashboard </span></a></li>
+                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw text-danger" data-icon="7"></i> <span class="hide-menu text-danger"> Multipurpose <span class="fa arrow"></span> <span class="label label-rouded label-danger pull-right">HOT</span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="../eliteadmin-hospital/index.html">Hospital Admin</a> </li>
+                            <li> <a href="../eliteadmin-university/index.html">University Admin</a> </li>
+                            <li> <a href="../eliteadmin-music/index.html">Music Admin</a> </li>
+                            <li> <a href="../eliteadmin-real-estate/index.html">Real Estate Admin</a> </li>
+                            <li role="separator" class="divider"></li>
+                            <li> <a href="../eliteadmin-inverse/index.html">Inverse</a></li>
+                            <li> <a href="../eliteadmin-colors/index.html">Colors</a></li>
+                            <li> <a href="../eliteadmin/index.html">Eliteadmin</a></li>
+                            <li> <a href="../eliteadmin-wpmenu/index.html">Wpmenu</a></li>
+                            <li> <a href="../eliteadmin-ecommerce/index.html">Ecommerce</a></li>
+                            <li> <a href="../eliteadmin-modern/index.html">Modern</a></li>
+                            <li> <a href="../eliteadmin-inverse-php/index.php">Basic PHP</a></li>
+                            <li> <a href="../eliteadmin-material/index3.html">Material Design</a></li>
+                            <li> <a href="../eliteadmin-dark/index.html">Dark</a></li>
+                            <li> <a href="../eliteadmin-mini-sidebar/index3.html">Mini Sidebar</a></li>
+                            <li> <a href="../eliteadmin-horizontal-navbar/index3.html">Horizontal Boxed Nav</a></li>
+                            <li> <a href="../eliteadmin-horizontal-nav-fullwidth/index.html">Horizontal Full Nav</a></li>
+                            <li> <a href="../eliteadmin-iconbar/index4.html">Iconbar</a></li>
+                            <li> <a href="../eliteadmin-rtl/index.html">Eliteadmin RTL</a></li>
+                            <li> <a href="../eliteadmin-inverse-rtl/index.html">Inverse RTL</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" class="waves-effect"><i data-icon=")" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Mailbox<span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="inbox.html">Inbox</a></li>
+                            <li> <a href="inbox-detail.html">Inbox detail</a></li>
+                            <li> <a href="compose.html">Compose mail</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-small-cap">--- Proffessional</li>
+                    <li><a href="javascript:void(0);" class="waves-effect"><i class="icon-people fa-fw"></i> <span class="hide-menu">Leads<span class="fa arrow"></span><span class="label label-rouded label-info pull-right">3</span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="crm-leads.html">All Leads</a></li>
+                            <li> <a href="crm-add-leads.html">Add Leads</a></li>
+                            <li> <a href="crm-edit-leads.html">Edit Leads</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" class="waves-effect"><i class="icon-docs fa-fw"></i> <span class="hide-menu">Reports<span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="crm-customer-report.html">Customer Reports</a></li>
+                            <li> <a href="crm-sales-report.html">Sales Reports</a></li>
+                            <li> <a href="crm-leads-report.html">Leads Reports</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" class="waves-effect"><i class="icon-people fa-fw"></i> <span class="hide-menu">Customers<span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="crm-customers.html">All Customers</a></li>
+                            <li> <a href="crm-add-customers.html">Add Customers</a></li>
+                            <li> <a href="crm-edit-customers.html">Edit Customers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" class="waves-effect"><i class="icon-handbag fa-fw"></i> <span class="hide-menu">Vendors<span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="crm-vendors.html">All Vendors</a></li>
+                            <li> <a href="crm-add-vendors.html">Add Vendors</a></li>
+                            <li> <a href="crm-edit-vendors.html">Edit Vendors</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" class="waves-effect active"><i class="ti-clipboard fa-fw"></i> <span class="hide-menu">Invoice<span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="crm-invoice.html">All Invoice</a></li>
+                            <li> <a href="crm-add-invoice.html">Add Invoice</a></li>
+                            <li> <a href="crm-edit-invoice.html">Edit Invoice</a></li>
+                            <li> <a href="crm-view-invoice.html">View Invoice</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="widgets.html" class="waves-effect"><i data-icon="P" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Widgets</span></a> </li>
+                    <li> <a href="#" class="waves-effect"><i data-icon="7" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Icons<span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="fontawesome.html">Font awesome</a> </li>
+                            <li> <a href="themifyicon.html">Themify Icons</a> </li>
+                            <li> <a href="simple-line.html">Simple line Icons</a> </li>
+                            <li><a href="linea-icon.html">Linea Icons</a></li>
+                            <li><a href="weather.html">Weather Icons</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-small-cap">--- Extra Components</li>
+                    <li> <a href="#" class="waves-effect"><i data-icon="/" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">UI Elements<span class="fa arrow"></span> <span class="label label-rouded label-info pull-right">13</span> </span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="cards.html">Cards</a></li>
+                            <li><a href="panels-wells.html">Panels and Wells</a></li>
+                            <li><a href="panel-ui-block.html">Panels With BlockUI</a></li>
+                            <li><a href="panel-draggable.html">Draggable Panel</a></li>
+                            <li><a href="portlet-draggable.html">Draggable Portlet</a></li>
+                            <li><a href="buttons.html">Buttons</a></li>
+                            <li><a href="bootstrap-switch.html">Bootstrap Switch</a></li>
+                            <li><a href="date-paginator.html">Date Paginator</a></li>
+                            <li><a href="sweatalert.html">Sweat alert</a></li>
+                            <li><a href="typography.html">Typography</a></li>
+                            <li><a href="grid.html">Grid</a></li>
+                            <li><a href="tabs.html">Tabs</a></li>
+                            <li><a href="tab-stylish.html">Stylish Tabs</a></li>
+                            <li><a href="modals.html">Modals</a></li>
+                            <li><a href="progressbars.html">Progress Bars</a></li>
+                            <li><a href="notification.html">Notifications</a></li>
+                            <li><a href="carousel.html">Carousel</a></li>
+                            <li><a href="list-style.html">List & Media object</a></li>
+                            <li><a href="user-cards.html">User Cards</a></li>
+                            <li><a href="timeline.html">Timeline</a></li>
+                            <li><a href="timeline-horizontal.html">Horizontal Timeline</a></li>
+                            <li><a href="nestable.html">Nesteble</a></li>
+                            <li><a href="range-slider.html">Range Slider</a></li>
+                            <li><a href="ribbons.html">Ribbons</a></li>
+                            <li><a href="steps.html">Steps</a></li>
+                            <li><a href="session-idle-timeout.html">Session Idle Timeout</a></li>
+                            <li><a href="session-timeout.html">Session Timeout</a></li>
+                            <li><a href="tooltip-stylish.html">Stylish Tooltip</a></li>
+                            <li><a href="bootstrap.html">Bootstrap UI</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="#" class="waves-effect"><i data-icon="&#xe008;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Sample Pages<span class="fa arrow"></span><span class="label label-rouded label-purple pull-right">30</span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="starter-page.html">Starter Page</a></li>
+                            <li><a href="blank.html">Blank Page</a></li>
+                            <li><a href="javascript:void(0)" class="waves-effect">Email Templates
+            <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a href="../email-templates/basic.html">Basic</a></li>
+                                    <li><a href="../email-templates/alert.html">Alert</a></li>
+                                    <li><a href="../email-templates/billing.html">Billing</a></li>
+                                    <li><a href="../email-templates/password-reset.html">Reset Pwd</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="lightbox.html">Lightbox Popup</a></li>
+                            <li><a href="treeview.html">Treeview</a></li>
+                            <li><a href="search-result.html">Search Result</a></li>
+                            <li><a href="utility-classes.html">Utility Classes</a></li>
+                            <li><a href="custom-scroll.html">Custom Scrolls</a></li>
+                            <li><a href="login.html">Login Page</a></li>
+                            <li><a href="login2.html">Login v2</a></li>
+                            <li><a href="animation.html">Animations</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="invoice.html">Invoice</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="register.html">Register</a></li>
+                            <li><a href="register2.html">Register v2</a></li>
+                            <li><a href="register3.html">3 Step Registration</a></li>
+                            <li><a href="recoverpw.html">Recover Password</a></li>
+                            <li><a href="lock-screen.html">Lock Screen</a></li>
+                            <li><a href="400.html">Error 400</a></li>
+                            <li><a href="403.html">Error 403</a></li>
+                            <li><a href="404.html">Error 404</a></li>
+                            <li><a href="500.html">Error 500</a></li>
+                            <li><a href="503.html">Error 503</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="forms.html" class="waves-effect"><i data-icon="&#xe00b;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Forms<span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="form-basic.html">Basic Forms</a></li>
+                            <li><a href="form-layout.html">Form Layout</a></li>
+                            <li><a href="form-advanced.html">Form Addons</a></li>
+                            <li><a href="form-material-elements.html">Form Material</a></li>
+                            <li><a href="form-float-input.html">Form Float Input</a></li>
+                            <li><a href="form-upload.html">File Upload</a></li>
+                            <li><a href="form-mask.html">Form Mask</a></li>
+                            <li><a href="form-img-cropper.html">Image Cropping</a></li>
+                            <li><a href="form-validation.html">Form Validation</a></li>
+                            <li><a href="form-dropzone.html">File Dropzone</a></li>
+                            <li><a href="form-pickers.html">Form-pickers</a></li>
+                            <li><a href="icheck-control.html">Icheck Form Controls</a></li>
+                            <li><a href="form-wizard.html">Form-wizards</a></li>
+                            <li><a href="form-typehead.html">Typehead</a></li>
+                            <li><a href="form-xeditable.html">X-editable</a></li>
+                            <li><a href="form-summernote.html">Summernote</a></li>
+                            <li><a href="form-bootstrap-wysihtml5.html">Bootstrap wysihtml5</a></li>
+                            <li><a href="form-tinymce-wysihtml5.html">Tinymce wysihtml5</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="tables.html" class="waves-effect"><i data-icon="O" class="linea-icon linea-software fa-fw"></i> <span class="hide-menu">Tables<span class="fa arrow"></span><span class="label label-rouded label-danger pull-right">7</span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="basic-table.html">Basic Tables</a></li>
+                            <li><a href="table-layouts.html">Table Layouts</a></li>
+                            <li><a href="data-table.html">Data Table</a></li>
+                            <li class="hidden"><a href="crud-table.html">Crud Table</a></li>
+                            <li><a href="bootstrap-tables.html">Bootstrap Tables</a></li>
+                            <li><a href="responsive-tables.html">Responsive Tables</a></li>
+                            <li><a href="editable-tables.html">Editable Tables</a></li>
+                            <li><a href="foo-tables.html">FooTables</a></li>
+                            <li><a href="jsgrid.html">JsGrid Tables</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-small-cap">--- Support</li>
+                    <li> <a href="javascript:void(0)" class="waves-effect"><i data-icon="F" class="linea-icon linea-software fa-fw"></i> <span class="hide-menu">Multi-Level Dropdown<span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="javascript:void(0)">Second Level Item</a> </li>
+                            <li> <a href="javascript:void(0)">Second Level Item</a> </li>
+                            <li> <a href="javascript:void(0)" class="waves-effect">Third Level <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li> <a href="javascript:void(0)">Third Level Item</a> </li>
+                                    <li> <a href="javascript:void(0)">Third Level Item</a> </li>
+                                    <li> <a href="javascript:void(0)">Third Level Item</a> </li>
+                                    <li> <a href="javascript:void(0)">Third Level Item</a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="login.html" class="waves-effect"><i class="icon-logout fa-fw"></i> <span class="hide-menu">Log out</span></a></li>
+                    <li class="hide-menu">
+                        <a href="javacript:void(0);">
+                            <span>Progress Report</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%" role="progressbar"> <span class="sr-only">85% Complete (success)</span> </div>
+                            </div>
+                            <span>Leads Report</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%" role="progressbar"> <span class="sr-only">85% Complete (success)</span> </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Left navbar-header end -->
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">All Leads</h4>
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <a href="https://themeforest.net/item/elite-admin-responsive-dashboard-web-app-kit-/16750820" target="_blank" class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light">Buy Now</a>
+                        <ol class="breadcrumb">
+                            <li><a href="#">Dashboard</a></li>
+                            <li class="active">All Leads</li>
+                        </ol>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /row -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="white-box">
+                            <h3 class="box-title m-b-0">All Leads</h3>
+                            <p class="text-muted m-b-30">all projects Leads</p>
+                            <div class="table-responsive">
+                                <table id="example23" class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Invoice No</th>
+                                            <th>Services</th>
+                                            <th>Client</th>
+                                            <th>Mails</th>
+                                            <th>Date</th>
+                                            <th>Price</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>50382-008</td>
+                                            <td>logo design</td>
+                                            <td>Jane Rose</td>
+                                            <td>jrose0@zimbio.com</td>
+                                            <td>9/26/2015</td>
+                                            <td>$445.84</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>11980-022</td>
+                                            <td>logo design</td>
+                                            <td>Jose Gutierrez</td>
+                                            <td>jgutierrez1@prnewswire.com</td>
+                                            <td>10/6/2015</td>
+                                            <td>$489.66</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>63323-306</td>
+                                            <td>SEO and SEM</td>
+                                            <td>Walter Bishop</td>
+                                            <td>wbishop2@mit.edu</td>
+                                            <td>2/12/2015</td>
+                                            <td>$492.57</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>63187-118</td>
+                                            <td>logo design</td>
+                                            <td>Clarence Little</td>
+                                            <td>clittle3@tiny.cc</td>
+                                            <td>9/11/2015</td>
+                                            <td>$353.53</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>55289-150</td>
+                                            <td>SEO and SEM</td>
+                                            <td>Martha Dunn</td>
+                                            <td>mdunn4@seattletimes.com</td>
+                                            <td>7/7/2015</td>
+                                            <td>$489.63</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>55111-199</td>
+                                            <td>graphic design</td>
+                                            <td>Rachel Gray</td>
+                                            <td>rgray5@naver.com</td>
+                                            <td>2/13/2015</td>
+                                            <td>$369.68</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>63481-440</td>
+                                            <td>wordpress website</td>
+                                            <td>Ralph Tucker</td>
+                                            <td>rtucker6@wikia.com</td>
+                                            <td>10/23/2015</td>
+                                            <td>$397.06</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>42254-052</td>
+                                            <td>photoshop</td>
+                                            <td>Betty Baker</td>
+                                            <td>bbaker7@si.edu</td>
+                                            <td>8/7/2015</td>
+                                            <td>$157.12</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>66993-160</td>
+                                            <td>php website</td>
+                                            <td>Lori Wilson</td>
+                                            <td>lwilson8@pbs.org</td>
+                                            <td>12/12/2014</td>
+                                            <td>$450.19</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>60429-128</td>
+                                            <td>programming</td>
+                                            <td>Jennifer Matthews</td>
+                                            <td>jmatthews9@t-online.de</td>
+                                            <td>2/9/2015</td>
+                                            <td>$478.61</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>49288-0108</td>
+                                            <td>marketing</td>
+                                            <td>Gregory Williams</td>
+                                            <td>gwilliamsa@prlog.org</td>
+                                            <td>8/4/2015</td>
+                                            <td>$354.83</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>54569-0419</td>
+                                            <td>social media marketing</td>
+                                            <td>Robin Hamilton</td>
+                                            <td>rhamiltonb@prlog.org</td>
+                                            <td>6/6/2015</td>
+                                            <td>$400.76</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>51672-4147</td>
+                                            <td>programming</td>
+                                            <td>Betty James</td>
+                                            <td>bjamesc@instagram.com</td>
+                                            <td>11/29/2015</td>
+                                            <td>$498.35</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>29300-111</td>
+                                            <td>photoshop</td>
+                                            <td>Johnny Williams</td>
+                                            <td>jwilliamsd@census.gov</td>
+                                            <td>1/25/2015</td>
+                                            <td>$431.01</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>0032-1103</td>
+                                            <td>programming</td>
+                                            <td>Robert Porter</td>
+                                            <td>rportere@de.vu</td>
+                                            <td>1/9/2015</td>
+                                            <td>$295.50</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>52125-250</td>
+                                            <td>marketing</td>
+                                            <td>Louise Rose</td>
+                                            <td>lrosef@jalbum.net</td>
+                                            <td>8/30/2015</td>
+                                            <td>$464.07</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>0143-9770</td>
+                                            <td>programming</td>
+                                            <td>Douglas Kelley</td>
+                                            <td>dkelleyg@yellowbook.com</td>
+                                            <td>1/8/2015</td>
+                                            <td>$384.82</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>36987-2904</td>
+                                            <td>social media marketing</td>
+                                            <td>Daniel Warren</td>
+                                            <td>dwarrenh@wordpress.org</td>
+                                            <td>11/2/2015</td>
+                                            <td>$315.32</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>0268-1281</td>
+                                            <td>web design</td>
+                                            <td>Wayne West</td>
+                                            <td>wwesti@upenn.edu</td>
+                                            <td>6/13/2015</td>
+                                            <td>$162.38</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>29336-815</td>
+                                            <td>branding</td>
+                                            <td>Harold Hicks</td>
+                                            <td>hhicksj@senate.gov</td>
+                                            <td>7/19/2015</td>
+                                            <td>$259.86</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>0054-4299</td>
+                                            <td>marketing</td>
+                                            <td>Bobby Hill</td>
+                                            <td>bhillk@reverbnation.com</td>
+                                            <td>8/24/2015</td>
+                                            <td>$397.16</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>49035-067</td>
+                                            <td>web design</td>
+                                            <td>Edward Mcdonald</td>
+                                            <td>emcdonaldl@sciencedirect.com</td>
+                                            <td>10/17/2015</td>
+                                            <td>$289.05</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>43419-017</td>
+                                            <td>php website</td>
+                                            <td>Amanda Bryant</td>
+                                            <td>abryantm@europa.eu</td>
+                                            <td>4/5/2015</td>
+                                            <td>$280.69</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>36987-2571</td>
+                                            <td>logo design</td>
+                                            <td>Irene Jones</td>
+                                            <td>ijonesn@springer.com</td>
+                                            <td>12/20/2014</td>
+                                            <td>$158.67</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>62559-110</td>
+                                            <td>web design</td>
+                                            <td>Julie Nguyen</td>
+                                            <td>jnguyeno@cpanel.net</td>
+                                            <td>10/16/2015</td>
+                                            <td>$220.06</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>55154-5371</td>
+                                            <td>crm service</td>
+                                            <td>Tina Duncan</td>
+                                            <td>tduncanp@squarespace.com</td>
+                                            <td>2/13/2015</td>
+                                            <td>$456.80</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>59779-130</td>
+                                            <td>php website</td>
+                                            <td>Joan Baker</td>
+                                            <td>jbakerq@nps.gov</td>
+                                            <td>6/5/2015</td>
+                                            <td>$313.06</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>67046-501</td>
+                                            <td>php website</td>
+                                            <td>George Coleman</td>
+                                            <td>gcolemanr@google.ca</td>
+                                            <td>6/30/2015</td>
+                                            <td>$153.48</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>36987-3052</td>
+                                            <td>web design</td>
+                                            <td>Douglas Boyd</td>
+                                            <td>dboyds@hao123.com</td>
+                                            <td>5/4/2015</td>
+                                            <td>$496.34</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>21695-547</td>
+                                            <td>photoshop</td>
+                                            <td>Jesse Richards</td>
+                                            <td>jrichardst@wikia.com</td>
+                                            <td>2/13/2015</td>
+                                            <td>$254.20</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>54569-0572</td>
+                                            <td>logo design</td>
+                                            <td>Shawn Scott</td>
+                                            <td>sscottu@liveinternet.ru</td>
+                                            <td>3/31/2015</td>
+                                            <td>$455.23</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>37808-252</td>
+                                            <td>crm service</td>
+                                            <td>Shawn Lee</td>
+                                            <td>sleev@opera.com</td>
+                                            <td>9/17/2015</td>
+                                            <td>$175.74</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>41520-505</td>
+                                            <td>social media marketing</td>
+                                            <td>Rebecca Grant</td>
+                                            <td>rgrantw@newsvine.com</td>
+                                            <td>4/16/2015</td>
+                                            <td>$276.89</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>69020-204</td>
+                                            <td>crm service</td>
+                                            <td>Fred George</td>
+                                            <td>fgeorgex@webmd.com</td>
+                                            <td>1/11/2015</td>
+                                            <td>$456.54</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>36800-086</td>
+                                            <td>programming</td>
+                                            <td>Jean Hawkins</td>
+                                            <td>jhawkinsy@economist.com</td>
+                                            <td>6/9/2015</td>
+                                            <td>$100.25</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>43063-423</td>
+                                            <td>branding</td>
+                                            <td>Eric Oliver</td>
+                                            <td>eoliverz@omniture.com</td>
+                                            <td>1/21/2015</td>
+                                            <td>$283.15</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>0781-3290</td>
+                                            <td>graphic design</td>
+                                            <td>Victor Harris</td>
+                                            <td>vharris10@google.it</td>
+                                            <td>10/30/2015</td>
+                                            <td>$313.12</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>49348-159</td>
+                                            <td>logo design</td>
+                                            <td>Russell Freeman</td>
+                                            <td>rfreeman11@wix.com</td>
+                                            <td>4/11/2015</td>
+                                            <td>$398.09</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>58118-0238</td>
+                                            <td>graphic design</td>
+                                            <td>Steve Turner</td>
+                                            <td>sturner12@utexas.edu</td>
+                                            <td>1/8/2015</td>
+                                            <td>$224.06</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>55910-582</td>
+                                            <td>web design</td>
+                                            <td>Ruth Butler</td>
+                                            <td>rbutler13@narod.ru</td>
+                                            <td>6/16/2015</td>
+                                            <td>$293.99</td>
+                                            <td><span class="label label-table label-info">New</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>42546-145</td>
+                                            <td>marketing</td>
+                                            <td>Patrick Fernandez</td>
+                                            <td>pfernandez14@histats.com</td>
+                                            <td>8/6/2015</td>
+                                            <td>$376.67</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>53135-838</td>
+                                            <td>php website</td>
+                                            <td>Helen Garza</td>
+                                            <td>hgarza15@dyndns.org</td>
+                                            <td>12/24/2014</td>
+                                            <td>$284.06</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>42002-421</td>
+                                            <td>social media marketing</td>
+                                            <td>Betty Burns</td>
+                                            <td>bburns16@guardian.co.uk</td>
+                                            <td>1/11/2015</td>
+                                            <td>$392.33</td>
+                                            <td><span class="label label-table label-success">Completed</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!-- .right-sidebar -->
+                <div class="right-sidebar">
+                    <div class="slimscrollright">
+                        <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
+                        <div class="r-panel-body">
+                            <ul>
+                                <li><b>Layout Options</b></li>
+                                <li>
+                                    <div class="checkbox checkbox-info">
+                                        <input id="checkbox1" type="checkbox" class="fxhdr">
+                                        <label for="checkbox1"> Fix Header </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox checkbox-warning">
+                                        <input id="checkbox2" type="checkbox" checked="" class="fxsdr">
+                                        <label for="checkbox2"> Fix Sidebar </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox checkbox-success">
+                                        <input id="checkbox4" type="checkbox" class="open-close">
+                                        <label for="checkbox4"> Toggle Sidebar </label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul id="themecolors" class="m-t-20">
+                                <li><b>With Light sidebar</b></li>
+                                <li><a href="javascript:void(0)" theme="default" class="default-theme">1</a></li>
+                                <li><a href="javascript:void(0)" theme="green" class="green-theme">2</a></li>
+                                <li><a href="javascript:void(0)" theme="gray" class="yellow-theme">3</a></li>
+                                <li><a href="javascript:void(0)" theme="blue" class="blue-theme">4</a></li>
+                                <li><a href="javascript:void(0)" theme="purple" class="purple-theme">5</a></li>
+                                <li><a href="javascript:void(0)" theme="megna" class="megna-theme">6</a></li>
+                                <li><b>With Dark sidebar</b></li>
+                                <br/>
+                                <li><a href="javascript:void(0)" theme="default-dark" class="default-dark-theme">7</a></li>
+                                <li><a href="javascript:void(0)" theme="green-dark" class="green-dark-theme">8</a></li>
+                                <li><a href="javascript:void(0)" theme="gray-dark" class="yellow-dark-theme working">9</a></li>
+                                <li><a href="javascript:void(0)" theme="blue-dark" class="blue-dark-theme">10</a></li>
+                                <li><a href="javascript:void(0)" theme="purple-dark" class="purple-dark-theme">11</a></li>
+                                <li><a href="javascript:void(0)" theme="megna-dark" class="megna-dark-theme">12</a></li>
+                            </ul>
+                            <ul class="m-t-20 chatonline">
+                                <li><b>Chat option</b></li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../plugins/images/users/genu.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../plugins/images/users/ritesh.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../plugins/images/users/arijit.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../plugins/images/users/govinda.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../plugins/images/users/hritik.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../plugins/images/users/john.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../plugins/images/users/pawandeep.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.right-sidebar -->
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center"> 2017 &copy; Elite Admin brought to you by themedesigner.in </footer>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/tether.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <script src="../plugins/bower_components/datatables/jquery.dataTables.min.js"></script>
+    <!-- start - This is for export functionality only -->
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+    <!-- end - This is for export functionality only -->
+    <script>
+    $(document).ready(function() {
+        $('#myTable').DataTable();
+        $(document).ready(function() {
+            var table = $('#example').DataTable({
+                "columnDefs": [{
+                    "visible": false,
+                    "targets": 2
+                }],
+                "order": [
+                    [2, 'asc']
+                ],
+                "displayLength": 25,
+                "drawCallback": function(settings) {
+                    var api = this.api();
+                    var rows = api.rows({
+                        page: 'current'
+                    }).nodes();
+                    var last = null;
+
+                    api.column(2, {
+                        page: 'current'
+                    }).data().each(function(group, i) {
+                        if (last !== group) {
+                            $(rows).eq(i).before(
+                                '<tr class="group"><td colspan="5">' + group + '</td></tr>'
+                            );
+
+                            last = group;
+                        }
+                    });
+                }
+            });
+
+            // Order by the grouping
+            $('#example tbody').on('click', 'tr.group', function() {
+                var currentOrder = table.order()[0];
+                if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
+                    table.order([2, 'desc']).draw();
+                } else {
+                    table.order([2, 'asc']).draw();
+                }
+            });
+        });
+    });
+    $('#example23').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+    });
+    </script>
+    <!--Style Switcher -->
+    <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+</body>
+
+</html>

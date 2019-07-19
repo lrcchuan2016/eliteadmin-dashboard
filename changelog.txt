@@ -1,0 +1,191 @@
+------------------------------
+/*****V3.6 – Nov 20, 2017*****/
+------------------------------
+1) updated angular 4 cli to version 5
+
+2) updated documentation with more thirdparty plugin's docs links
+
+3) in sidebar, white background on active anchor tag is corrected. 
+------------------------------
+/*****V3.5 – Oct 6, 2017*****/
+------------------------------
+-Added authentication pages to angular and also added table and form pages
+
+------------------------------
+/*****V3.4 – May 15, 2017*****/
+------------------------------
+-Fixed some Bugs in RTL 
+
+------------------------------
+/*****V3.4 – April 18, 2017*****/
+------------------------------
+-Updated to bootstrap 4 (bootstrap 3 also supported)
+
+
+------------------------------
+/*****V3.3 – March 07, 2017*****/
+------------------------------
+- Updated 33 plugins library to their latest version
+    01). Bootstrap datepicker to v1.7.0
+    02). Bootstrap daterangepicker to v2.1.25
+    03). Bootstrap Select2 to v1.12.2
+    04). Bootstrap Switch to v3.3.4
+    05). Bootstrap table to 1.11.1
+    06). Bootstrap tagsinput to v0.8.0
+    07). Bootstrap touchspin to v3.1.2
+    08). Full calendar to v3.2.0
+    09). Image cropper to v3.0.0
+    10). Data table to v1.10.13
+    11). Dropify to v0.2.1
+    12). Dropzone to latest
+    13). Flot chart to v0.8.3
+    14). Flot tooltip to v0.9.0
+    15). Gridstack to v0.3.0
+    16). jquery to v3.1.1
+    17). tiny-editable to custom change
+    18). sparkline to v2.1.2
+    19). jquery ui to v1.12.1
+    20). Jquery wizard master to v0.4.3
+    21). Jsgrid master to v1.5.3
+    22). Moment js to v2.17.1
+    23). icheck to v1.0.2
+    24). ION range slider to v2.1.6
+    25). jquery to v3.1.1
+    26). Multiselect to v0.9.12
+    27). Peity chart to v3.2.1
+    28). Raphael to latest
+    29). sweetalert to latest
+    30). switchery to v0.8.2
+    31). summernote to v0.8.2
+    32). bootstrap timepicker to v0.1.0 
+    33). tinymce to v4.5.4
+
+------------------------------
+/*****V3.2 – 7 Feb, 2017*****/
+------------------------------
+- Added Draggable Panel
+- Added Draggable Portlet
+- Added Bootstrap Switch
+- Added Date Paginator
+- Added Ribbons
+- Added Steps Page
+- Added Session Idle timeout
+- Added Session Timeout
+- Added Form Icheck-controls
+
+------------------------------
+/*****V3.1 – 22 November, 2016  ( Now Became Multipurpose admin template)*****/
+------------------------------
+- Added Hospital Admin Demo
+- Added CRM Admin Demo
+- Added University Admin Demo 
+- Added Music Admin Demo 
+- Added Real-estate Admin Demo
+- Added 3 Step Registration 
+
+
+------------------------------
+/*****V2.5 – 27 October, 2016*****/
+------------------------------
+- Added 3 different color in new demo of (eliteadmin-colors)
+- Updated bootstrap 3.3.6 to 3.3.7
+- Added Real estate dashboard 
+- Added Add property page
+- Added property Listing page
+- Added property detail page
+- Added property listing with three column
+- Added property listing with four column
+
+
+
+------------------------------
+/*****V2.1 – Aug 30, 2016*****/
+------------------------------
+- Added New Demo Eliteadmin-modern
+
+------------------------------
+/*****V1.8 – Aug 25, 2016*****/
+------------------------------
+- Added Image cropping
+- Added Login variation 2
+- Added Register variation 2
+- Added Horizontal Timeline
+- Added List and Media object
+- Added User cards
+
+
+------------------------------
+/*****V1.7 – Aug 19, 2016*****/
+------------------------------
+- Added 4 Email Template
+  - Basic
+  - Alert
+  - Billing
+  - Password reset
+
+------------------------------
+/*****V1.6 – Aug 16, 2016*****/
+------------------------------
+- Added Static Chat Application
+- Added Typehead
+- Added Contact / Employee List
+- Added Second Variation of Contact / Employee List
+- Added Contact / Employee Details
+
+
+------------------------------
+/*****V1.5 – Aug 11, 2016*****/
+------------------------------
+- Added Main Psd files
+- Added Summernote
+
+
+------------------------------
+/*****V1.5 – Aug 10, 2016*****/
+------------------------------
+- Added Landing Page with Package
+- Data Table Export (CSV, Excel, PDF, Copy & Print)
+- Added New Demo For Minisidebar
+- Added 9 New Page Templates
+   - Animations 
+   - Search Result
+   - Treeview
+   - lightbox
+   - Custom-Scroll
+   - Utility classes
+   - Range-slider
+   - Starter Page
+   - Megamenu
+
+
+------------------------------
+/*****V1.4 – July 31, 2016*****/
+------------------------------
+- Added 12 New Styles for Tabs
+- Added 12 New Styles for Tooltips
+
+
+------------------------------
+/*****V1.3 – July 26, 2016*****/
+------------------------------
+- Added Eliteadmin Dark Version
+- Added Eliteadmin Horizontal nav with fullwidth
+
+
+------------------------------
+/*****V1.2 – July 22, 2016*****/
+------------------------------
+- Added E-commerce Version with 7 New Pages
+  - E-commerce Dashboard
+  - Products
+  - Product Detail
+  - Product Edit
+  - Product Orders
+  - Product Cart
+  - Product Checkout  
+
+
+------------------------------
+/*****V1.1 July 19, 2016*****/
+------------------------------
+- Added RTL Version of Two demos (eliteadmin-inverse-rtl & eliteadmin-rtl)
